@@ -1,48 +1,8 @@
-## Starter Project
+# React-github-finder
 
-- css provided (global styles, styled components)
-- folders/files already setup
-- all imports included (warnings)
-- index.js for easier imports
+A web app written using react, that make the github searching for a user, more interactive, using Fushion Charts. It uses authentication (provided by Auth0) with email or social (google, facebook, github). 
 
-## Styled Components
-
-[Styled-Components - Main Docs](https://styled-components.com/)
-
-```jsx
-import styled from "styled-components";
-
-const ReactComponent = () => {
- // logic here
- return <Wrapper>
- {some content}
- </Wrapper>
-}
-
-
-const Wrapper = styled.htmlElement`
-write your styles here
-`
-export default ReactComponent
-```
-
-## React Icons
-
-[React Icons - Main Docs](https://react-icons.github.io/react-icons/)
-
-```jsx
-import { FiUsers, FiUserPlus } from 'react-icons/fi';
-<FiUsers className='nameOfTheClass'> </FiUsers>;
-```
-
-## React Router Dom
-
-version used - "react-router-dom": "^5.2.0",
-
-- [react-router-dom - Main Docs](https://reactrouter.com/web/guides/quick-start)
-
-- <Switch> renders the first child <Route> that matches
-- A <Route path="*"> always matches
+# [See live demo](https://github-user-finder-reactapp.netlify.app/)
 
 ## Gihthub API
 
@@ -69,40 +29,29 @@ version used - "react-router-dom": "^5.2.0",
 - Choose : Single Page Web Applications
 - Choose : React
 - Go to Settings Tab
-- Copy/Paste Domain, ClientID - can be public (or use .env)
+- Copy/Paste Domain, ClientID
 - Add Domain -
   for now http://localhost:3000 (DON'T COPY PASTE FROM URL BAR)
 
   - Allowed Callback URLs
   - Allowed Logout URLs
   - Allowed Web Origins
-  - SAVE CHANGES!!!!!!!!!!!!!!!
 
 - Connections
-  email,social
+  email,social (google, facebook, github)
 
 - [React SDK Docs](https://auth0.com/docs/libraries/auth0-react)
 - [REACT SDK API Docs](https://auth0.github.io/auth0-react/)
 
+## Additional info
+
+[Styled-Components - Main Docs](https://styled-components.com/)
+[React Icons - Main Docs](https://react-icons.github.io/react-icons/)
+[react-router-dom - Main Docs](https://reactrouter.com/web/guides/quick-start)
+
 ## Deployment
 
 [Netlify](https://www.netlify.com/)
-
-## Additional Info
-
-#### Redirects with react-router-dom
-
-In order for routing to work on netlify, redirects was added to the public folder
-
-- \_redirects file in public
-
-```
-
-/*    /index.html   200
-
-```
-
-[Redirects Blog Post](https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc)
 
 #### Warnings and create-react-app
 
